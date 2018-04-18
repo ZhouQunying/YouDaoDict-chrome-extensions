@@ -1,0 +1,140 @@
+:host-context(#yddWrapper) {
+  position: absolute;
+  transition: all 0.2s;
+  z-index: 999999999;
+}
+a,
+a:hover,
+a:visited {
+  color: #50799b;
+  text-decoration: none!important;
+}
+#ydd-content {
+  opacity: 0;
+  transition: opacity 0.5s 0.1s;
+}
+#ydd-content.fadeIn {
+  opacity: 1;
+}
+#yddContainer {
+  display: block;
+  font-family: sans-serif, Arial, Microsoft YaHei;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  text-align: left;
+  min-width: 250px;
+  max-width: 400px;
+  -webkit-user-drag: element;
+  color: #252525;
+  z-index: 10001;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(26,26,26,.1);
+}
+.yddTop {
+  cursor: move;
+  overflow: hidden;
+}
+.yddTop .yddTopBorderlr {
+  position: relative;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  color: #03a87c;
+  padding: 2px 46px 0 20px;
+}
+.yddTop .yddTopBorderlr .yddKeyTitle {
+  display: inline-block;
+  /*给图标预留至少 17px 的宽度*/
+  font-weight: bold;
+  vertical-align: top;
+  color: #03a87c;
+  line-height: 46px;
+  font-size: 18px;
+}
+.yddTop .yddTopBorderlr .ydd-phonetic {
+  display: inline-block;
+  margin-left: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px !important;
+  line-height: 46px;
+  color: #333;
+}
+.yddTop .yddTopBorderlr .ydd-voice.ydd-voice-icon {
+  display: inline-block;
+  width: 20px;
+  height: inherit;
+  margin-left: 8px;
+  background: url("image/audio.png") no-repeat;
+  background-size: 20px;
+  background-position-y: 13px;
+  cursor: pointer;
+}
+.yddTop .yddTopBorderlr .ydd-detail {
+  display: none;
+  margin-left: 5px;
+  line-height: 46px;
+  color: #03a87c;
+  font-size: 14px;
+  float: right;
+}
+.yddTop .yddTopBorderlr #addToNote {
+  box-sizing: border-box;
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+.yddTop .yddTopBorderlr #addToNote.green {
+  color: #5ad25a;
+}
+.yddTop .yddTopBorderlr .ydd-close {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+  color: #03a87c;
+}
+.yddMiddle {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: -12px;
+  padding: 0 20px;
+}
+.yddMiddle .ydd-trans-wrapper .ydd-tabs {
+  display: block;
+  padding: 20px 0 6px;
+  height: 16px;
+}
+.yddMiddle .ydd-trans-wrapper .ydd-tabs .ydd-tab {
+  display: block;
+  float: left;
+  height: 18px;
+  line-height: 18px;
+  background: #fff;
+  font-size: 16px;
+}
+.yddMiddle .ydd-trans-wrapper .ydd-trans-container {
+  display: block;
+  line-height: 160%;
+}
+
+.yddMiddle .ydd-trans-wrapper .ydd-trans-container a {
+  color: #03a87c;
+}
+
+.no-result {
+  margin-top: 10px;
+  line-height: 24px;
+}
