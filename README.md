@@ -5,4 +5,4 @@ Amazing youdao dictionary extension of chrome.
 
 ![alt text](http://b.hiphotos.baidu.com/image/pic/item/9345d688d43f87948dd6e67ede1b0ef41bd53ab0.jpg)
 
-Enjoy.
+Enjoy😉.
